@@ -1,0 +1,11 @@
+inherit gnome2
+
+NAME="gnome-recipes"
+VERSION=1.0.0
+RELEASE=1
+CATEGORY="Utils"
+SUMMARY="GNOME recipes application"
+DESCRIPTION="An easy-to-use application that will help you to discover what to
+cook today, tomorrow, the rest of the week and for your special occasions."
+
+PATCH_URI="1.0.0-vpath.patch"

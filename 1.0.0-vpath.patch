@@ -1,0 +1,11 @@
+--- origsrc/gnome-recipes-1.0.0/src/Makefile.am	2017-03-17 08:39:28.000000000 -0500
++++ src/gnome-recipes-1.0.0/src/Makefile.am	2017-03-17 14:14:02.385170100 -0500
+@@ -1,7 +1,7 @@
+ bin_PROGRAMS = gnome-recipes
+ 
+ commitid := $(shell cd $(top_srcdir); $(GIT) describe)
+-libgd_info = $(shell cat $(top_builddir)/libgd.info)
++libgd_info = $(shell cat $(top_srcdir)/libgd.info)
+ 
+ gnome_recipes_CFLAGS = \
+ 	$(WARN_CFLAGS) 			\
