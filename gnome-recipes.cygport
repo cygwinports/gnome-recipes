@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-recipes"
-VERSION=1.0.0
+VERSION=1.0.8
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="GNOME recipes application"
