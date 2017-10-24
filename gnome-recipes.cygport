@@ -1,4 +1,4 @@
-inherit gnome.org
+inherit gnome.org meson
 
 NAME="gnome-recipes"
 VERSION=1.6.2
@@ -7,14 +7,3 @@ CATEGORY="Utils"
 SUMMARY="GNOME recipes application"
 DESCRIPTION="An easy-to-use application that will help you to discover what to
 cook today, tomorrow, the rest of the week and for your special occasions."
-
-src_compile() {
-	cd ${B}
-	meson --prefix=/usr ${S} ${B}
-	ninja
-}
-
-src_install() {
-	cd ${B}
-	DESTDIR=${D} ninja install
-}
