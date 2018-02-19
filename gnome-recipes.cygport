@@ -1,9 +1,11 @@
 inherit gnome.org meson
 
 NAME="gnome-recipes"
-VERSION=1.6.2
+VERSION=2.0.2
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="GNOME recipes application"
 DESCRIPTION="An easy-to-use application that will help you to discover what to
 cook today, tomorrow, the rest of the week and for your special occasions."
+
+PATCH_URI="2.0.2-goa-autoptr.patch"

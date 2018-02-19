@@ -1,0 +1,13 @@
+--- origsrc/gnome-recipes-2.0.2/src/gr-shopping-list-exporter.c	2017-11-11 19:24:53.000000000 -0600
++++ src/gnome-recipes-2.0.2/src/gr-shopping-list-exporter.c	2018-02-14 04:50:07.043855500 -0600
+@@ -400,8 +400,8 @@ static gboolean
+ get_todoist_account (GrShoppingListExporter *exporter)
+ {
+ 
+-	g_autoptr (GoaClient) client = NULL;
+-	g_autoptr (GList) accounts = NULL;
++	GoaClient *client = NULL;
++	GList *accounts = NULL;
+ 	GList *l;
+ 	GoaAccount *account;
+ 	GError *error;
